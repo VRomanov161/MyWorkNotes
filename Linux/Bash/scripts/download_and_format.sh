@@ -3,8 +3,7 @@
 # Второй параметр parse . Из файла удалить всё содержимое между тегами <style> , затем удалить все html теги из файла
 # Использовать утилиты: curl, sed
 
-
-
+```
 #!/bin/bash
 
 clear
@@ -19,7 +18,6 @@ function parse()
 {
 sed -e '/<style>/,/<\/style>/d' -e :a -e 's/<[^>]*>//g;/</N;//ba' index.html
 }
-
 
 
 ######
@@ -40,3 +38,4 @@ if [[ $function == "download" ]] || [[ $function == "parse" ]]; then
 else
   echo "no correct function!"
 fi
+```
