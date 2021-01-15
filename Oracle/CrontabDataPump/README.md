@@ -32,6 +32,7 @@ source /home/oracle/valentin.env    #### применяем переменное
 impdp SYSTEM/password full=Y directory=dmpdir dumpfile=schema.dmp logfile=impdp_$mydate.log
 
 Сохраняем и выходим
+```
 
 #### В терминале запускаем crontab (откроется текстовый файл в который и будем записывать что и когда выполнять):
 ```
