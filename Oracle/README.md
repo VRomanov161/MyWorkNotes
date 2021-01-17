@@ -81,7 +81,7 @@ FRA (Fast Recovery Area) -область на диске для резервны
 ##### Alert log находится:
 		/u01/app/oracle/diag/rdbms/valentin/valentin/trace    ## где valentin это имя instance #####
 		SQL> show parapeter diag  
-
+		SQL> select value from v$diag_info where name='Diag Trace';
 ### Файлы паролей (Password File).
 Необязательный файл, используется для защиты информации о подключениях привилегированных пользователей. Если отсутствует,
 то вы можете выполнять администрирование своей базы данных, только локально. Кроме того, с его помощью контролируется
