@@ -1,4 +1,4 @@
-# CRONTAB DATA PUMP export
+# CRON DATA PUMP export
 
 #### Создаем файл instance_name.env который будет содержать переменное окружение:
 ```
