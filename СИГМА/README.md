@@ -1950,3 +1950,5 @@ SELECT owner,
                               WHERE tablespace_name LIKE 'TIGER%')    -- подставляем имя схемы
 GROUP BY owner, tablespace_name
 ORDER BY 1, 2;
+
+=====================================================
